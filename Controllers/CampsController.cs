@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace MobileBackend.Controllers
 {
+    [Route("api/[controller]")]
     public class CampsController : Controller
     {
-        [HttpGet("api/camps")]
+        [HttpGet("")]
         public IActionResult Get()
         {
             return Ok(new { name = "Shawn of the Dead", FavoriteColor = "Plum" });
